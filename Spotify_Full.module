@@ -1,0 +1,12 @@
+#!name=Spotify Premium Ultimate Fix
+#!desc=Fix Auto Logout + Stable Token + Premium
+#!author=ChatGPT Ultimate Build
+#!version=3.0
+
+[Script]
+
+spotify_unified = type=http-request,http-response,pattern=^https:\/\/.*spotify\.com,requires-body=true,script-path=https://raw.githubusercontent.com/yourrepo/spotify/main/spotify.js
+
+
+[MITM]
+hostname = *.spotify.com
